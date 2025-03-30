@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lägg till html2canvas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <!-- Lägg till jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+    <title>Resume</title>
+    
+    
+</head>
+<body>
+
+    <!-- FLEX-LAYOUT FÖR RESPONSIVITET -->
+    <div id="resume-content" class="flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-start">
+        
+
+
+        <!-- SIDOBAR (BILD, KONTAKT, UTBILDNING) -->
+        <div class="bg-green-900 w-full sm:w-3/4 md:w-2/5 lg:w-1/4 h-auto p-6 sm:p-10">
+            <div class="flex items-center justify-center mb-8">
+                <img src="Gaya-mars2025-3.JPG" 
+                        alt="gaya" 
+                        class="rounded-lg w-24 sm:w-32 shadow-lg transition duration-300 ease-in-out hover:border-4 hover:border-yellow-300">
+            </div>
+
+            <!-- KONTAKT -->
+            <div>
+                <h1 class="text-gray-200 uppercase tracking-widest text-lg font-bold mb-4">Contact</h1>
+                <p class="text-gray-200 text-sm">gaya.andersson@gmail.com</p>
+                <p class="text-gray-200 text-sm">+46 (0) 70 733 56 40</p>
+                <p class="text-gray-200 text-sm">Stockholm, Sweden</p>  
+            </div>
+            <hr class="my-5 border-gray-400">
+
+            <!-- UTBILDNING -->
+            <h1 class="text-gray-200 uppercase tracking-widest text-lg font-bold mb-4">Education</h1>
+            
+            <h1 class="text-gray-300 text-sm font-semibold tracking-wider">Full-Stack Developer Program</h1>
+            <p class="text-gray-400 text-sm"><span class="italic">Företagsuniversitetet</span>, Stockholm | 2024 - 2026</p>
+            <br>
+
+            <h1 class="text-gray-300 text-sm font-semibold tracking-wider">Basic programming in C#</h1>
+            <p class="text-gray-400 text-sm"><span class="italic">Luleå University of Technology</span>, Luleå | 2024</p>
+            <br>
+
+            <h1 class="text-gray-300 text-sm font-semibold tracking-wider">Database Technology 1</h1>
+            <p class="text-gray-400 text-sm"><span class="italic">Luleå University of Technology</span>, Luleå | 2019</p>
+            <br>
+
+            <h1 class="text-gray-300 text-sm font-semibold tracking-wider">Bachelor`s Degree (Chemistry)</h1>
+            <p class="text-gray-400 text-sm"><span class="italic">Stockholm University</span>, Stockholm | 2001 - 2004</p>
+            <hr class="my-5 border-gray-400">
+            
+             <!-- Language -->
+            <h1 class="text-gray-200 uppercase tracking-widest text-lg font-bold mb-4">Languages</h1>
+            <ul class="list-disc ml-5 text-gray-300 text-sm">
+                <li>Swedish (Fluent)</li>
+                <li>Englilsh (Fluent)</li>
+                <li>Norwegian (Good reading, good oral understanding)</li>
+                <li>German (Good reading, some speaking)</li>
+                <li>Tamil (Native)</li>
+            </ul>
+           
+        </div>
+
+        <!-- HUVUDINNEHÅLL -->
+        <div class="bg-white w-full sm:w-3/4 md:w-3/5 lg:w-3/4 h-auto p-6 sm:p-10 mt-4 lg:mt-0">
+            <h1 class="font-bold text-2xl sm:text-3xl uppercase tracking-wider text-green-800 mt-3 mb-3 transition duration-300 ease-in-out 
+            transform hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r 
+            hover:from-yellow-400 hover:via-blue-500 hover:to-yellow-600 hover:scale-85">
+            Gaya Andersson
+            </h1>
+
+            
+            <h3 class="font-semibold text-lg sm:text-2xl mt-2 text-green-700">Full-Stack Developer Student | Laboratory Data Administrator | Chemist</h3>
+
+            <p class="text-gray-600 text-sm sm:text-base mt-2 leading-relaxed">
+                Full-Stack Developer student with a strong problem-solving mindset and a keen interest in building 
+                dynamic web applications and e-commerce platforms.<br>
+                Currently pursuing a vocational higher education program, 
+                gaining hands-on experience in creating efficient and user-friendly digital solutions.
+                <br>
+                I have developed web projects using HTML5, CSS, and JavaScript during my first semester. My work can be explored through my portfolio, 
+                and web projects I have built are available on GitHub <a href="https://gayand-soul.github.io/GayaPortfolio/" target="_blank"
+                class="text-blue-600 hover:text-blue-800 font-semibold underline">portfolio</a>.
+                <br>
+                In the spring of 2025, we will deepen our knowledge in modern frameworks and technologies such as React, Vite, Angular, and TypeScript, 
+                and we will develop an e-commerce website.
+                <br>
+                Previously, I have designed and optimized landing pages and workflows within 
+                Laboratory Information Management Systems (LIMS) and completed a SAP Crystal Reports course, 
+                which inspired my interest in data visualization and business systems.
+                <br>
+                I am adaptable, reliable, and take initiative, thriving both in independent work and collaborative team environments.
+            </p>
+
+            <h1 class="font-bold text-2xl sm:text-3xl uppercase tracking-wider text-green-800 mt-3 mb-3 transition duration-300 ease-in-out 
+                        transform hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r 
+                        hover:from-yellow-400 hover:via-blue-500 hover:to-yellow-600 hover:scale-65">Experience</h1>
+            
+            <h1 class="text-green-700 font-semibold">LABORATORY IT CONSULTANT (2024 - 2022)</h1>
+            <ul class="list-disc ml-5 text-gray-600 text-sm sm:text-base">
+                <li>LIMS (Laboratory Information Management System) Consultant with responsible for implementing, configuring, and maintaining LIMS software.</li>
+                <li>Configuration and support of the LIMS System SampleManager from Thermo Scientific.</li>
+                <li>Responsible for making changes to workflows, designing landing pages, and managing system configurations.</li>
+            </ul>
+
+            <h1 class="text-green-700 font-semibold mt-3">LAB DATA ADMINISTRATOR (2022 - 2019)</h1>
+            <ul class="list-disc ml-5 text-gray-600 text-sm sm:text-base">
+                <li>As a LIMS Administrator for LabVantage C5LIMS software from SoftwarePoint I Managed administrative tasks, performed routine checks.</li>
+                <li>Responsible for the configuration support and troubleshot system issues.</li>
+                <li>Developed SOPs and work instructions to optimize workflows.</li>
+            </ul>
+
+            <h1 class="text-green-700 font-semibold mt-3">CHEMIST (2022 - 2012)</h1>
+            <ul class="list-disc ml-5 text-gray-600 text-sm sm:text-base">
+                <li>Validation of new analysis methods, drafting and reviewing SOPs, analysis methods, validation protocols, and validation reports</li>
+                <li>Assisted in the implementation of QC and the management of new methods.</li>
+                <li>Provided training and guidance to laboratory assistants.</li>
+            </ul>
+
+             <!-- SKILLS -->
+            <h1 class="font-bold text-2xl sm:text-3xl uppercase tracking-wider text-green-800 mt-3 mb-3 transition duration-300 ease-in-out 
+                        transform hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r 
+                        hover:from-yellow-400 hover:via-blue-500 hover:to-yellow-600 hover:scale-65">Skills</h1>
+                <div class="flex flex-wrap gap-3 text-sm sm:text-base">
+                    <span class="bg-green-800 text-white py-1 px-3 rounded-full hover:bg-blue-700 transition duration-300">JavaScript</span>
+                    <span class="bg-green-700 text-white py-1 px-3 rounded-full hover:bg-green-700 transition duration-300">HTML</span>
+                    <span class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-yellow-700 transition duration-300">CSS</span>
+                    <span class="bg-green-500 text-white py-1 px-3 rounded-full hover:bg-teal-700 transition duration-300">TypeScript</span>
+                    <span class="bg-green-900 text-white py-1 px-3 rounded-full hover:bg-indigo-700 transition duration-300">React/Angular</span>
+                    <span class="bg-cyan-600 text-white py-1 px-3 rounded-full hover:bg-gray-700 transition duration-300">GMP/GAMP</span>
+                    <span class="bg-cyan-500 text-white py-1 px-3 rounded-full hover:bg-purple-700 transition duration-300">Consulting</span>
+                    <span class="bg-cyan-400 text-white py-1 px-3 rounded-full hover:bg-red-700 transition duration-300">LIMS</span>
+                    <span class="bg-green-900 text-white py-1 px-3 rounded-full hover:bg-pink-700 transition duration-300">MES</span>
+                    <span class="bg-green-600 text-white py-1 px-3 rounded-full hover:bg-orange-700 transition duration-300">STANDARDS ISO 15189, ISO 9001</span>
+                </div>
+                                
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
